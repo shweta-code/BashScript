@@ -1,0 +1,6 @@
+Find And Replace with variables(Enclose expression in double quotes ")
+sed "s/$from/$to/" 
+
+Find And Replace without variables
+var="xy"
+`echo $var | sed "s/x/y/"`  --->  yy
