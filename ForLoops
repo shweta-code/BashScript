@@ -1,0 +1,13 @@
+for i in ` ps -ef | grep "airflow scheduler" | awk '{print $2}'`
+do   
+ echo $i
+ sudo kill -9 $i
+done
+
+
+If you have to write it in single line
+for i in ` ps -ef | grep "airflow scheduler" | awk '{print $2}’`;
+do   
+ echo $I;
+ sudo kill -9 $I;
+done
