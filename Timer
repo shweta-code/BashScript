@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Starting this operation"
+t=$(timer)
+printf 'Total Elapsed time   %s\n' "$(timer $t)"
