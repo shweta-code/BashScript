@@ -7,3 +7,9 @@ var="xy"
 
 3. Replace _3 with _6 in 6.sh file
 sed -i 's/_3/_6/g' 6.sh
+
+4. Complex finding and replacing
+awk -f scripts/awk/awk -f scripts/awk/find_and_replace_all.awk -v params="@week_start_date=$ab|@horizon=$cd" x.sql > y.sql
+
+Use find_and_replace_all.awk on x.sql and generate y.sql
+In x.sql @week_start_date , @horizon ,replace ab and cd.
