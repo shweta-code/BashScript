@@ -1,6 +1,9 @@
-Find And Replace with variables(Enclose expression in double quotes ")
+1. Find And Replace with variables(Enclose expression in double quotes ")
 sed "s/$from/$to/" 
 
-Find And Replace without variables
+2. Find And Replace without variables
 var="xy"
 `echo $var | sed "s/x/y/"`  --->  yy
+
+3. Replace _3 with _6 in 6.sh file
+sed -i 's/_3/_6/g' 6.sh
