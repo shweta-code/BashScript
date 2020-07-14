@@ -1,0 +1,5 @@
+ssh user@remoteMachine 'command1 && command2'
+
+
+Example
+ssh -i ~/keys/<private_key> <user>@<remote_ip> 'ps -A | grep <app_name> | awk '{print $1}' | xargs kill -9 $1 && nohup <run app command> 2>&1 >> <log_file_path>'
